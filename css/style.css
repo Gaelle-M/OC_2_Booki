@@ -10,7 +10,7 @@
 
 :root {
     --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
+    --main-bg-color: #f2f2f2;
     --filter-bg-color: #DEEBFF;
 }
 
@@ -56,6 +56,154 @@ header nav ul li a:hover {
 }
 
 
+/****** Main ***********/
+/**Find Hebergements section **/
+.find-hebergements {
+    margin: 40px 0 20px;
+}
+.find-hebergement-titles {
+    margin-bottom: 35px;
+}
+.find-hebergement-titles h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.find-hebergement-titles p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*FORMULAIRE*/
+ form{
+    display: flex;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 50px;
+}
+ form span {
+    width: 50px;
+    height: 100%;
+    background: var(--main-bg-color);
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.find-hebergement-form form span i {
+    color: black; 
+}
+ form input {
+    border: 0;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    padding: 0 10px;
+}
+ form .button-dekstop {
+    border: none;
+    background: var(--main-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+form .button-mobile {
+    display: none;
+    border: none;
+    background: var(--main-color);
+    border-radius: 15px;
+   padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 2;
+    margin-left: -20px;
+}
+
+form .button-mobile i {
+    color: white;
+}
+
+/*SEARCH SECTION*/
+.find-hebergement-filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.find-hebergement-filters p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.find-hebergement-filters ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.find-hebergement-filters ul li {
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 4px 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 50px;
+}
+
+.find-hebergement-filters ul li:hover {
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.find-hebergement-filters ul li i {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*INFOS SECTION*/
+.find-hebergement-infos {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.find-hebergement-infos span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.find-hebergement-infos span i {
+    font-size: 10px;
+}
+
+
+/****** Section main center ***********/
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -160,8 +308,6 @@ a {
 }
 
 
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -201,6 +347,36 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
+@media screen and (max-width: 768px) {
+
+    /*SECTION FIND-HEBERGEMENT*/
+    .find-hebergement-filters {
+        gap: 10px;
+    }
+    .find-hebergement-filters ul li {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .find-hebergement-filters ul li {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .find-hebergement-filters  {
+    display: flex;
+    flex-wrap: wrap;
+    }
+}
+
+
+/*Version mobile*/
+
+/****** Header ***********/
 @media (max-width: 500px) {
     header {
         flex-direction: column;
@@ -237,5 +413,35 @@ a {
         border-top: none;
         border-bottom: 2px solid #0065FC;
         padding-bottom: 20px;
+    }
+}
+
+/** Formulaire ***/
+@media screen and (max-width: 500px) {
+    
+form input {
+    font-size: 13px;
+    width: 70%;
+ }
+form .button-dekstop {
+    display: none;
+ }
+
+form .button-mobile {
+    display: block;
+ }
+}
+
+/*Setion filtre*/
+@media screen and (max-width: 480px) {
+    .find-hebergement-filters ul li {
+        flex: 1 1 22%;
+    }
+}
+
+/*Section find hebergements title*/
+@media screen and (max-width: 375px) {
+    .find-hebergement-titles h1 {
+        font-size: 20px;
     }
 }
