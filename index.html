@@ -36,10 +36,10 @@
                 </div>
 
                 <div class="find-hebergement-form">
-                    <form action="">
+                    <form>
                         <span><i class="fa-solid fa-location-dot"></i></span>
                         <input type="text" value="Marseille, France">
-                        <button class="button-dekstop" ="submit" >Rechercher</button>
+                        <button class="button-dekstop" type="submit" >Rechercher</button>
                         <button class="button-mobile" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
@@ -61,7 +61,7 @@
             </div>
 
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements" class="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
 
                     <div class="hebergements-cards">
@@ -80,7 +80,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </article>
@@ -100,7 +100,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </article>
@@ -120,7 +120,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </article>
@@ -140,7 +140,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </article>
@@ -160,7 +160,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </article>
@@ -180,7 +180,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </article>
@@ -189,7 +189,8 @@
                     </div>
 
                 </section>
-
+              
+                <!--POPULAIRES-->
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -255,6 +256,46 @@
                         </a>
                     </div>
                 </section>
+            </div>
+
+            <!--Section main bottom-->
+          <!--ACTIVITES-->
+            <div id="activites">
+                <h2>Activités à Marseille</h2>
+              <div class="activites-cards">
+                
+            <!--Activites 1--> 
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port à Marseille">
+                                    <h3 class="card-title">Vieux-Port</h3>
+                        </article>
+                    </a>
+
+            <!--Activites 2--> 
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues">
+                                    <h3 class="card-title">Fort de Pomègues</h3>
+                        </article>
+                    </a>
+
+            <!--Activites 3--> 
+                    <a href="#">
+                        <article class="card card-responsive">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du parc national des Calanques">
+                                    <h3 class="card-title">Parc national des Calanques</h3>
+                        </article>
+                    </a>
+
+            <!--Activites 4--> 
+                    <a href="#">
+                        <article class="card card-responsive">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image du vieux port à Marseille">
+                                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </article>
+                    </a>
+              </div>
             </div>
         </main>
         <footer></footer>
