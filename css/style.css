@@ -122,7 +122,7 @@ form .button-mobile {
     border: none;
     background: var(--main-color);
     border-radius: 15px;
-   padding: 15px;
+    padding: 15px;
     font-size: 18px;
     font-weight: bold;
     z-index: 2;
@@ -372,8 +372,17 @@ a {
     border-top-right-radius: 20px;
 }
 
-.activites-cards .card-title {
+.activites-cards .card-activity {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+
+
+.activites-cards .card-activity .card-title {
     padding: 20px;
+    font-size: 16px;
 }
 
 /***FOOTER***/
@@ -411,7 +420,7 @@ footer ul {
         align-items: flex-start;
     }
 
-    /*SECTION POPULAIRE*/
+    /*SECTION HEBERGEMENT ET POPULAIRE*/
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -443,14 +452,17 @@ footer ul {
         font-size: 13px;
     }
 
+    /** ACTIVITES **/
+
     .activites-cards img {
         height: 200px;
     }
 
-    .activites-cards .card-responsive .card-title {
-        padding: 10px;
- }
-}
+    .activites-cards .card-activity .card-title {
+            font-size: 14px;
+   }
+
+} 
 
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 768px) {
@@ -516,7 +528,10 @@ footer ul {
         padding: 0 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .find-hebergement-form {
+        width: 80%;
     }
 
     .find-hebergement-filters {
@@ -578,10 +593,11 @@ footer ul {
         flex-direction: column;
         margin: 0 25px;
     }
-}
 
-  
-@media screen and (max-width: 660px) {
+    .find-hebergement-form {
+        width: 100%;
+    }
+    
     footer {
         display: flex;
         flex-direction: column;
@@ -594,38 +610,6 @@ footer ul {
 }
 
 
-@media screen and (max-width: 470px) {
-        .find-hebergement-infos span {
-            width: 30px;
-            height: 25px; 
-        }
-
-        .find-hebergement-infos p {
-            font-size: 14px;
-        }
-}
 
 
-/*Section find hebergements title*/
-@media screen and (max-width: 375px) {
-     .find-hebergement-titles h1 {
-        font-size: 20px;
-    }
 
-    .find-hebergement-infos span {
-        width: 35px;
-        height: 25px; 
-    }
-}
-
-/*FILTRES*/
-@media screen and (max-width: 320px) {
-    .find-hebergement-filters ul li {
-    flex: 1 1 28%;
-    } 
-}
-@media screen and (max-width: 307px) {
-    .find-hebergement-filters ul li {
-    flex: 1 1 50%;
-    } 
-}
